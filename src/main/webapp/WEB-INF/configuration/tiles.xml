@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>  
+    <definition name="base.definition"   template="/WEB-INF/jsp/layout/layout.jsp"> 
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/jsp/include/header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="footer" value="/WEB-INF/jsp/include/footer.jsp" />  
+    </definition>  
+  
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="home page dream shop" />
+        <put-attribute name="body" value="/WEB-INF/jsp/container/home.jsp" />
+    </definition>  
+    <definition name="orderpage" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/jsp/container/order.jsp" />
+    </definition> 
+    <definition name="adminpage" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/jsp/container/admin.jsp" />
+    </definition>
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/jsp/container/login.jsp" />
+    </definition>  
+    <definition name="userpage" extends="base.definition">  
+        <put-attribute name="body" value="/WEB-INF/jsp/container/user.jsp" />
+    </definition>
+</tiles-definitions> 
